@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet">
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- fonts Tektur -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- fonts Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+        <div class="violet_bg">
+
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand logo_image" href="#">
+                            <img src="../images/image 2.svg" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Strategies_home.html">Strategies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="Affiliate_dashboard.html">Affiliate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="subscribtion_1.html">Subscribtion</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About
+                                    </a>
+                                    <ul class="dropdown-menu submenu" style="    
+                                    color: #FFF;
+                                    border: 1px solid rgba(255, 255, 255, 0.15);
+                                    background: rgba(255, 255, 255, 0.20);
+                                    backdrop-filter: blur(10px);">
+                                        <li><a class="dropdown-item white" href="contact_us.html">Contact-us</a></li>
+                                        <li><a class="dropdown-item white" href="Privacy_Policy.html">Privacy</a></li>
+                                        <li><a class="dropdown-item white" href="terms_and_condition.html">Trems & Conditions</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="FQA.html">FQA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="marketplace.html">Marketplace</a>
+                                </li>
+                               
+                            </ul>
+                            <!-- if user already login -->
+                            <div class="d-flex align-items-center justify-content-between gap-1">
+                                <!-- <a class="btn text-btn px-5">Login</a>
+                                <a class="btn primary_btn px-5">Sign in</a> -->
+                                <img src="../images/user.jpg" class="user_img">
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- end of navbar -->
+                <div class="content">
+                    <div class="internal_page">
+                        <div class="page_title">
+                            <h1 class="header_title text-start">Become Affiliate</h1>
+                            <!-- breadcrumb -->
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Affiliate</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    
+                        <!-- form -->
+                                <div class="card col-sm-12 col-md-10 col-lg-8" >
+                                    <div class="d-flex flex-column gap-1">
+                                        <h2 class="side_title">Add New Affiliate</h2>
+                                    </div>
+                                    <form id="contact_form" class="w-100 needs-validation" novalidate> 
+                                       <div class="d-flex gap-2 w-100 flex-wrap">
+                                        <div class="col-sm-12 col-md">
+                                            <label for="name" class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="name" aria-describedby="name_error"
+                                                placeholder="Enter Full Name" pattern="^(?=.*\S).{3,}$" required>
+                                            <div id="name_error" class="error_msg invalid-feedback">please enter your valid name
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="email" aria-describedby="email_error"
+                                                placeholder="Enter Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                                required>
+                                            <div id="email_error" class="error_msg invalid-feedback">please enter your valid
+                                                email</div>
+                                        </div>       
+                                       </div>
+                                       <div class="d-flex gap-2 w-100 flex-wrap">
+                                        <div class="col-sm-12 col-md">
+                                            <label for="Pho_no" class="form-label">Phone Number</label>
+                                            <div style="position: relative;">
+                                                <input type="tel" class="form-control ps-7" id="Pho_no" name="Pho_no" placeholder="Phone number"
+                                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                                <div class="dropdown abs_list">
+                                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="false">
+                                                        +20
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md">
+                                            <label for="address" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="address" aria-describedby="address_error"
+                                                placeholder="Enter Address" pattern="^\d+\s[A-Za-z\s]+(?:,\s*[\w\s]+)?(?:,\s*\d+)?$"
+                                                required>
+                                            <div id="address_error" class="error_msg invalid-feedback">123 Main Street, Apt 4B </div>
+                                        </div>       
+                                       </div>
+
+                                       <div class="d-flex gap-2 w-100 flex-wrap">
+                                        <div class="col-sm-12 col-md">
+                                            <label for="bank_name" class="form-label">Bank Name</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option value="disabled" disabled selected hidden >Choose Bank Name
+                                                </option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <div id="bank_name_error" class="error_msg invalid-feedback">please enter your BE </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md">
+                                            <label for="account_no" class="form-label">Account Number/IBAN</label>
+                                            <input type="number" class="form-control" id="account_no" aria-describedby="account_no_error"
+                                                placeholder="Enter Account Number"
+                                                required>
+                                            <div id="account_no_error" class="error_msg invalid-feedback">please enter your valid
+                                                Address</div>
+                                        </div>         
+
+                                       </div>
+
+                                       <div class="d-flex gap-2 w-100 flex-wrap">
+                                        <div class="col-sm-12 col-md">
+                                            <label for="website_link" class="form-label">Website (optional)</label>
+                                            <input type="text" class="form-control" id="website_link" aria-describedby="website_link_error"
+                                                placeholder="Enter Link">
+                                            <div id="website_link_error" class="error_msg invalid-feedback">please enter your valid
+                                                Address</div>
+                                        </div>
+                                        <div class="col-sm-12 col-md">
+                                            <label for="social_media_link" class="form-label">Social Media Links (optional)</label>
+                                            <input type="text" class="form-control" id="social_media_link" aria-describedby="social_media_link_error"
+                                                placeholder="Enter Link">
+                                            <div id="social_media_link_error" class="error_msg invalid-feedback">Enter valid
+                                                social media link</div>
+                                        </div>         
+
+                                       </div>
+
+                                       <div class="d-flex gap-2 w-100 flex-wrap">
+                                        <div class="col-sm-12 col-md">
+                                            <label for="market_plan" class="form-label">Marketing Plan (optional)</label>
+                                            <input type="text" class="form-control" id="market_plan" aria-describedby="market_plan_error"
+                                                placeholder="Enter Marketing Plan">
+                                            <div id="market_plan_error" class="error_msg invalid-feedback">enter valid Marketing Plan
+                                                </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md">
+                                            <label for="tax_info" class="form-label">Tax Information (optional)</label>
+                                            <input type="text" class="form-control" id="tax_info" aria-describedby="tax_info_error"
+                                                placeholder="Enter Tax Info">
+                                            <div id="tax_info_error" class="error_msg invalid-feedback">enter valid Tax Information</div>
+                                        </div>         
+
+                                       </div>
+
+                                       
+
+
+                                       <div class="text-end buttons" >
+                                        <div class="col-3 min-width">
+                                            <button class="btn primary_btn" data-bs-toggle="modal" data-bs-target="#submitModal" type="submit"><span>Submit</span></button>
+                                        </div>
+                                        <div class="col-3 min-width" >
+                                            <button class="btn secondary_btn" type="submit"><span>Cancel</span></button>
+                                        </div>
+                                      </div>
+
+                                    </form>
+                                </div>
+
+                                  <!-- submit modal --> 
+                                <!-- Modal -->
+                                <div class="modal fade" id="submitModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                           <img src="../images/submit_img.svg">
+                                           <h2 class="modal_desc">Displays that the application is under review.</h2>
+                                        </div>
+                                 
+                                    </div>
+                                    </div>
+                                </div>
+                                 <!-- end submit modal -->
+
+
+                        <img class="footer_abs_img" src="../images/astronaut.svg">
+                    </div>
+                </div>
+                <!-- footer -->
+                <footer class="home_section content">
+                    <div class="col-sm-12 col-md-4 footer_images">
+                        <img class="bg_abs_img_left w-auto" src="../images/rectangle_bg_left.svg">
+                        <img src="../images/image 2.svg" class="footer_img">  
+                        <p class="footer_desc">Step into the world of trading excellence and seize every opportunity with our advanced platform, expert guidance,
+                            and strategic insights for unrivaled financial success. </p>
+                        <div class="footer_download">
+                            <img src="../images/play_store.svg" class="height_img">
+                            <img src="../images/apple_store_download.svg" class="height_img">
+                        </div>   
+                    </div>
+                <div class="col-sm-12 col-md-7 footer_sections" >
+                    <div class="col-sm col-lg-3">
+                        <h1 class="footer_title">Home</h1>
+                        <a>Strategies</a>
+                        <a>Trades</a>
+                        <a>Account</a>
+                        <a>Affiliate</a>
+                    </div>
+                    <div class="col-sm col-lg-3">
+                        <h1 class="footer_title">Quick Links</h1>
+                        <a>About us</a>
+                        <a>Contact us</a>
+                        <a>FQA</a>
+                    </div>
+                    <div class="col-sm col-lg-3">
+                        <h1 class="footer_title">Support</h1>
+                        <a>Terms & Conditions</a>
+                        <a>Privacy Policy</a>
+                        <a>Suppport</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex align-items-center justify-content-between gap-1 flex-wrap w-100">
+                    <span class="footer_desc">All Rights Reserved <i class="bi bi-c-circle px-1"></i>  2024 Strat </span>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="social_media"> <i class="bi bi-instagram"></i> </span>
+                        <span class="social_media"> <i class="bi bi-youtube"></i> </span>
+                       </div>   
+                </div>
+               
+                </footer>
+
+        </div>
+
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   
+<!-- validation -->
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+</html>

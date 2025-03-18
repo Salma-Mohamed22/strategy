@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet">
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- fonts Tektur -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- fonts Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+</head>
+
+<body>
+    <div class="blue_bg">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo_image" href="#">
+                    <img src="../images/image 2.svg" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Strategies_home.html">Strategies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Affiliate_dashboard.html">Affiliate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="subscribtion_1.html">Subscribtion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="FQA.html">FQA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marketplace.html">Marketplace</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                English
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-between gap-1">
+                        <!-- <a class="btn text-btn px-5">Login</a>
+                        <a class="btn primary_btn px-5">Sign in</a> -->
+                        <img src="../images/user.jpg" class="user_img">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+        <div class="content">
+            <div class="internal_page">
+                <div class="page_title">
+                    <h1 class="header_title text-start">Subscription</h1>
+                    <!-- breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Subscribtion</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">payment info</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <!-- FQA  Section -->
+                <div class="FQA_section page_section pt-0">
+                    <div class="left_side col-sm-12 col-md-7">
+                        <div class="d-flex flex-column gap-1">
+                            <h2 class="side_title">Choose Payment MethodEnter Payment info to start your free trial</h2>
+                        </div>
+                        <div class="payment_method">
+                            <form id="payment_form_radio" class="w-100 needs-validation" novalidate>
+                                <div class="radios_btn">
+                                    <div class="form-check default_radio">
+                                        <label class="form-check-label" for="exampleRadios1">
+                                            <div class="d-flex justify-content-start gap-2 align-items-center">
+                                                <img src="../images/paypal_svg.svg"
+                                                    class="payment_icon"><span>emanelsherbiny366@mail.com</span>
+                                            </div>
+
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1">
+
+                                    </div>
+                                    <!-- <div class="form-check default_radio">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        <div class="d-flex justify-content-start gap-2 align-items-center">
+                                                            <img src="../images/paypal_svg.svg" class="payment_icon"><span>emanelsherbiny366@mail.com</span>
+                                                        </div>
+
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
+
+                                                </div>  -->
+                                </div>
+                            </form>
+                            <a id="payment_addnew"> Add New Payment Methods </a>
+                            <form id="payment_form" class="w-100 needs-validation" novalidate>
+                                <div class="form-input">
+                                    <input type="text" class="form-control" id="card_no"
+                                        aria-describedby="card_no_error" placeholder="Card Number's" required>
+                                    <div id="card_no_error" class="error_msg invalid-feedback">please enter your Card
+                                        Number</div>
+                                </div>
+                                <div class="d-flex gap-2 w-100 flex-wrap">
+                                    <div class="form-input col-sm-12 col-md">
+                                        <input type="datetime-local" class="form-control" id="proj_deadline"
+                                            placeholder="DD/MM/YY" required>
+                                    </div>
+                                    <div class="form-input col-sm-12 col-md">
+                                        <input type="number" class="form-control" id="Cvv" aria-describedby="Cvv_error"
+                                            placeholder="Cvv" pattern="^\d{3}$" required>
+                                        <div id="Cvv_error" class="error_msg invalid-feedback">please enter your Cvv
+                                        </div>
+                                        <i class="bi bi-exclamation-circle input_icon"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 w-100 flex-wrap">
+                                    <div class="form-input col-sm-12 col-md">
+                                        <input type="text" class="form-control" id="full_name"
+                                            aria-describedby="full_name_error" placeholder="Full Name"
+                                            pattern="^(?=.*\S).{3,}$" required>
+                                        <div id="full_name_error" class="error_msg invalid-feedback">please enter your
+                                            name</div>
+                                    </div>
+                                    <div class="select_parent col-sm-12 col-md">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="disabled" disabled selected hidden style="color: red;">
+                                                Country</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class="side_desc">Optional</p>
+                                <div class="d-flex gap-2 w-100 flex-wrap">
+                                    <div class="form-input col-sm-12 col-md">
+                                        <input type="number" class="form-control" id="vatid"
+                                            aria-describedby="vatid_error" placeholder="VAT ID" required>
+                                        <div id="vatid_error" class="error_msg invalid-feedback">please enter your VAT
+                                            ID</div>
+                                        <i class="bi bi-exclamation-circle input_icon"></i>
+                                    </div>
+                                    <div class="form-input col-sm-12 col-md">
+                                        <input type="number" class="form-control" id="phone_no"
+                                            aria-describedby="phone_no_error" placeholder="Phone Number"
+                                            pattern="^(?=.*\S).{3,}$" required>
+                                        <div id="phone_no_error" class="error_msg invalid-feedback">please enter your
+                                            Phone Number</div>
+                                    </div>
+                                </div>
+
+                                <p class="side_desc">By clicking "Agree and subscribe", Your subscription will
+                                    automatically renew annually until you cancel
+                                    (price subject to change). Cancel before your trial ends and you won't be charged.
+                                    Cancel anytime via  or <a class="link">Customer Support</a>. Cancel before Nov 10,
+                                    2024 to get a full refund and avoid a fee.
+                                    You also agree to the <a class="primary_color link">Terms of Use</a> and the <a
+                                        class="primary_color link">Subscription and Cancellation Terms</a>.</p>
+
+
+                                <div class="buttons">
+                                    <button class="btn primary_btn max-content px-5" type="submit">Add New</button>
+                                    <button class="btn secondary_btn max-content px-5">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="right_side col-sm-12 col-md-5">
+                        <h2 class="summery_title">Summary</h2>
+                        <div class="summery_content">
+                            <h4 class="summery_subtitle">Subscription</h4>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a class="nav-link dropdown-toggle summery_period" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    12 Month
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                                <p class="total">100$/mo</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="summery_content">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4 class="summery_subtitle">Subtotal</h4>
+                                <p class="total">100$/mo</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4 class="summery_subtitle">VAT 14%</h4>
+                                <p class="total">5$/mo</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4 class="summery_subtitle">DUE Now</h4>
+                                <p class="total">0.00$/mo</p>
+                            </div>
+                            <a class="btn primary_btn">Complete Checkout</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <img class="footer_abs_img" src="../images/astronaut.svg">
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="home_section content">
+            <div class="col-sm-12 col-md-4 footer_images">
+                <img class="bg_abs_img_left w-auto" src="../images/rectangle_bg_left.svg">
+                <img src="../images/image 2.svg" class="footer_img">
+                <p class="footer_desc">Step into the world of trading excellence and seize every opportunity with our
+                    advanced platform, expert guidance,
+                    and strategic insights for unrivaled financial success. </p>
+                <div class="footer_download">
+                    <img src="../images/play_store.svg" class="height_img">
+                    <img src="../images/apple_store_download.svg" class="height_img">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-7 footer_sections">
+                <div class="col-sm col-lg-3">
+                    <h1 class="footer_title">Home</h1>
+                    <a>Strategies</a>
+                    <a>Trades</a>
+                    <a>Account</a>
+                    <a>Affiliate</a>
+                </div>
+                <div class="col-sm col-lg-3">
+                    <h1 class="footer_title">Quick Links</h1>
+                    <a>About us</a>
+                    <a>Contact us</a>
+                    <a>FQA</a>
+                </div>
+                <div class="col-sm col-lg-3">
+                    <h1 class="footer_title">Support</h1>
+                    <a>Terms & Conditions</a>
+                    <a>Privacy Policy</a>
+                    <a>Suppport</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- flatpickr -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    flatpickr("input[type=datetime-local]", {
+        dateFormat: "d / M / Y",
+        // defaultDate: new Date(),
+    });
+</script>
+
+<!-- validation -->
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+<!-- select placeholder diff color -->
+<script>
+    let selects = document.querySelectorAll(".form-select");
+
+    selects.forEach(select => {
+        select.addEventListener("change", function () {
+            if (this.value === "disabled") {
+                this.classList.remove("selected");
+            } else {
+                this.classList.add("selected");
+            }
+        });
+    });
+
+</script>
+
+<!-- check radio -->
+<!-- <script>
+    // Get all radio inputs with class .form-check-input
+    var radioInputs = document.querySelectorAll('.form-check-input');
+
+    var ckechs_icon = document.querySelectorAll('.bi-check');
+    console.log(radioInputs);
+    // Loop through each radio input and add event listener
+    radioInputs.forEach(function(input) {
+        input.addEventListener('change', function() {
+            // Remove 'active' class from all .form-check elements
+            var formChecks = document.querySelectorAll('.form-check');
+            formChecks.forEach(function(formCheck) {
+                formCheck.classList.remove('checked_radio');
+            });
+
+            // Add 'active' class to the parent .form-check of the checked input
+            if (input.checked) {
+                input.closest('.form-check').classList.add('checked_radio');
+
+            }
+        });
+    });
+</script> -->
+
+<!-- add new payment method -->
+<!-- <script>
+    // Show the payment form when the "Add New Payment Methods" link is clicked
+    let addnew_btn = document.querySelector('#payment_addnew');
+    let addnew_form = document.querySelector('#payment_form');
+    let radios_btn = document.querySelector('.radios_btn');
+    let count = 2;
+
+    addnew_btn.addEventListener('click', function() {
+        // Reset form and remove validation classes
+        addnew_form.reset();
+        addnew_form.classList.remove('was-validated'); // Remove validation error classes
+        addnew_form.style.display = "flex"; // Show the form
+    });
+
+    // Handle form submission
+    addnew_form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Check if the form is valid
+        if (this.checkValidity()) {
+            // Get input values
+            const cardNumber = document.getElementById('card_no').value;
+            const fullName = document.getElementById('full_name').value;
+
+            // Create new radio input and label
+            const newRadioDiv = document.createElement('div');
+            newRadioDiv.classList.add('form-check', 'default_radio');
+
+            const newRadioInput = document.createElement('input');
+            newRadioInput.classList.add('form-check-input');
+            newRadioInput.type = 'radio';
+            newRadioInput.name = 'exampleRadios'; // Keep the name consistent
+            newRadioInput.id = 'option' + count; // Unique ID
+            count++;
+            console.log(count);
+
+            newRadioInput.value = cardNumber; // Use card number as value
+
+            const newLabel = document.createElement('label');
+            newLabel.classList.add('form-check-label');
+            newLabel.htmlFor = newRadioInput.id; // Link label to radio input
+            newLabel.innerHTML = `<div class="d-flex justify-content-start gap-2 align-items-center">
+                                    <img src="../images/paypal_svg.svg" class="payment_icon">
+                                    <span>${fullName}</span>
+                                  </div>`;
+
+            // Append the new radio input and label to the radio buttons container
+            radios_btn.appendChild(newRadioDiv);
+            newRadioDiv.appendChild(newLabel);
+            newRadioDiv.appendChild(newRadioInput);
+            // Hide the form
+            addnew_form.style.display = "none";
+
+            // Optionally, reset the form fields
+            addnew_form.reset();
+        } else {
+            // Add was-validated class if the form is invalid
+            this.classList.add('was-validated');
+        }
+    });
+</script> -->
+
+
+
+<script>
+    // Get all radio inputs with class .form-check-input
+    var radioInputs = document.querySelectorAll('.form-check-input');
+
+    // Initialize checkboxes icon selection
+    var checks_icon = document.querySelectorAll('.bi-check');
+
+    // Function to handle radio input changes
+    function handleRadioChange() {
+        // Loop through each radio input and add event listener
+        radioInputs.forEach(function (input) {
+            input.addEventListener('change', function () {
+                // Remove 'checked_radio' class from all .form-check elements
+                var formChecks = document.querySelectorAll('.form-check');
+                formChecks.forEach(function (formCheck) {
+                    formCheck.classList.remove('checked_radio');
+                });
+
+                // Add 'checked_radio' class to the parent .form-check of the checked input
+                if (input.checked) {
+                    input.closest('.form-check').classList.add('checked_radio');
+                }
+            });
+        });
+    }
+
+    // Call the function to set up the initial radio buttons
+    handleRadioChange();
+
+    // Add new payment method
+    let addnew_btn = document.querySelector('#payment_addnew');
+    let addnew_form = document.querySelector('#payment_form');
+    let radios_btn = document.querySelector('.radios_btn');
+    let count = 3; // Start from 3 assuming 2 existing methods
+
+    addnew_btn.addEventListener('click', function () {
+        // Reset form and remove validation classes
+        addnew_form.reset();
+        addnew_form.classList.remove('was-validated'); // Remove validation error classes
+        addnew_form.style.display = "flex"; // Show the form
+    });
+
+    // Handle form submission
+    addnew_form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Check if the form is valid
+        if (this.checkValidity()) {
+            // Get input values
+            const cardNumber = document.getElementById('card_no').value;
+            const fullName = document.getElementById('full_name').value;
+
+            // Create new radio input and label
+            const newRadioDiv = document.createElement('div');
+            newRadioDiv.classList.add('form-check', 'default_radio');
+
+            const newRadioInput = document.createElement('input');
+            newRadioInput.classList.add('form-check-input');
+            newRadioInput.type = 'radio';
+            newRadioInput.name = 'exampleRadios'; // Keep the name consistent
+            newRadioInput.id = 'option' + count; // Unique ID
+            newRadioInput.value = cardNumber; // Use card number as value
+
+            const newLabel = document.createElement('label');
+            newLabel.classList.add('form-check-label');
+            newLabel.htmlFor = newRadioInput.id; // Link label to radio input
+            newLabel.innerHTML = `<div class="d-flex justify-content-start gap-2 align-items-center">
+                                    <img src="../images/paypal_svg.svg" class="payment_icon">
+                                    <span>${fullName}</span>
+                                  </div>`;
+
+            // Append the new radio input and label to the radio buttons container
+            radios_btn.appendChild(newRadioDiv);
+            newRadioDiv.appendChild(newLabel);
+            newRadioDiv.appendChild(newRadioInput);
+
+            // Re-initialize radio input event listeners
+            handleRadioChange();
+
+            // Hide the form
+            addnew_form.style.display = "none";
+
+            // Optionally, reset the form fields
+            addnew_form.reset();
+            count++; // Increment count for next ID
+        } else {
+            // Add was-validated class if the form is invalid
+            this.classList.add('was-validated');
+        }
+    });
+</script>
+
+</html>
